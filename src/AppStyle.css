@@ -35,6 +35,8 @@ button {
 .result {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .todo, .done {
@@ -76,4 +78,25 @@ button {
 }
 .list.borderRed i {
     color: rgb(243, 23, 23);
+}
+
+@media (max-width:1200px) {
+    .container {
+        padding: 50px 200px;
+    }
+}
+@media (max-width:992px) {
+    .container {
+        padding: 50px 150px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        padding: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .done, .todo {
+        width: 100%;
+    }
 }
